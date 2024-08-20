@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LSPD - Serwer 77RP</title>
+  <title> LSPD - Serwer 77RP </title>
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-   <div class="menu-toggle" onclick="toggleSidebar()">&#9776;</div>
+   <div class="menu-toggle" onclick="toggleSidebar()">&#9776; </div>
   <div class="sidebar" id="sidebar">
     <a href="#dyrektorzy">Dyrektorzy</a>
     <a href="#high-command">High Command</a>
@@ -14,6 +14,9 @@
     <a href="#SASP">SASP</a>
     <a href="#SASPR">SASPR</a>
       <a href="#K-9">K-9</a>
+  </div>
+    <div style="margin-left: 200px; padding: 15px;">
+    <input type="text" id="searchInput" onkeyup="search()" placeholder="Wyszukaj po imieniu...">
   </div>
   <section class="officers" id="dyrektorzy">
     <h2>DYREKTORZY JEDNOSTKI</h2>
@@ -40,11 +43,11 @@
     </section>
     <section class="officers" id="high-command">
         <h2>HIGH COMMAND</h2>
-    <img src="logo.png" alt="Logo" class="logo" style="border-radius: 60px">
+    <img src="logo.png" alt="Logo" class="logo" style="border-radius: 60px" >
       <p> </p>
       <ul>
       <li3>
-        <img src="Lola Badclick.png" alt="Lola Badclick">
+        <img src="Lola Badclick.png" alt="Lola Badclick" >
         <div>
           <h3>Lola Badclick</h3>
           <h4>Pozycja: Chief Of Police</h4>
@@ -52,7 +55,7 @@
         </div>
       </li3>
       <li3>
-        <img src="Raul Danzano.png" alt="Raul Danzano">
+        <img src="Raul Danzano.png" alt="Raul Danzano" >
         <div>
           <h3>Raul Danzano</h3>
           <h4>Pozycja: Assistant Chief Of Police</h4>
@@ -60,7 +63,7 @@
         </div>
       </li3>
       <li3>
-        <img src="Mason Murphy.png" alt="Mason Murphy">
+        <img src="Mason Murphy.png" alt="Mason Murphy" >
         <div>
           <h3>Mason Murphy</h3>
           <h4>Pozycja: Deputy Chief Of Police</h4>
@@ -68,7 +71,7 @@
         </div>
       </li3>
       <li3>
-        <img src="Christopher Burns.png" alt="Christopher Burns">
+        <img src="Christopher Burns.png" alt="Christopher Burns" >
         <div>
           <h3>Christopher Burns</h3>
           <h4>Pozycja: Commander</h4>
@@ -80,7 +83,7 @@
     </section>
     <section class="officers" id="LSPD">
     <h2>Funkcjonariusze</h2>
-    <img src="logo.png" alt="Logo" class="logo" style="border-radius: 60px"> <!-- Logo -->
+    <img src="logo.png" alt="Logo" class="logo" style="border-radius: 60px"> 
     <p>Jednostka LSPD</p>
       <li>
         <img src="brak zdjecia.png" alt="Miguel Moralez">
@@ -246,7 +249,7 @@
           </div>
       </li>
       <li>
-          <img src="brak zdjecia.png" alt="William Smith">
+          <img src="William Smith.png" alt="William Smith">
           <div>
               <h3>William Smith</h3>
               <h4>Pozycja: Sergeant I</h4>
@@ -406,7 +409,7 @@
           </div>
       </li>
       <li>
-          <img src="brak zdjecia.png" alt="Garry NekK">
+          <img src="Garry Nekk.png" alt="Garry NekK">
           <div>
               <h3>Garry NekK</h3>
               <h4>Pozycja: Officer III</h4>
@@ -435,22 +438,6 @@
               <h3>Gregory Wilson</h3>
               <h4>Pozycja: Officer III</h4>
               <p1>Numer odznaki: 463</p1>
-          </div>
-      </li>
-      <li>
-          <img src="brak zdjecia.png" alt="Michael Anderson">
-          <div>
-              <h3>Michael Anderson</h3>
-              <h4>Pozycja: Officer II</h4>
-              <p1>Numer odznaki: 491</p1>
-          </div>
-      </li>
-      <li>
-          <img src="brak zdjecia.png" alt="Juchan Laporta">
-          <div>
-              <h3>Juchan Laporta</h3>
-              <h4>Pozycja: Officer II</h4>
-              <p1>Numer odznaki: 492</p1>
           </div>
       </li>
       <li>
@@ -518,7 +505,7 @@
           </div>
       </li>
         <li>
-          <img src="brak zdjecia.png" alt="Levi Fink">
+          <img src="Levi Fink.png" alt="Levi Fink">
           <div>
               <h3>Levi Fink</h3>
               <h4>Pozycja: Officer II</h4>
@@ -596,7 +583,7 @@
           </div>
       </li2>
       <li2>
-          <img src="brak zdjecia.png" alt="Carla Montana">
+          <img src="Carla Montana.png" alt="Carla Montana">
           <div>
               <h3>Carla Montana</h3>
               <h4>Pozycja: Lieutenant I</h4>
@@ -746,7 +733,7 @@
           </div>
     </li5>
         <li5>
-          <img src="brak zdjecia.png" alt="Patrizio Mirolli">
+          <img src="Patrizio Mirolli.png" alt="Patrizio Mirolli">
           <div>
               <h3>Patrizio Mirolli</h3>
               <h4>Pozycja: Officer III+I</h4>
@@ -840,7 +827,7 @@
           </div>
     </li6>
         <li6>
-          <img src="april willi2.png" alt="April Willi">
+          <img src="April Willi3.png" alt="April Willi">
           <div>
               <h3>April Willi</h3>
               <h4>Pozycja: Officer III+I</h4>
@@ -858,19 +845,66 @@
               <h3>Venus</h3>
               <h4>Pozycja: K-9</h4>
           </div>
-    </li7>
-     <script>
-    function toggleSidebar() {
-      var sidebar = document.getElementById("sidebar");
-      if (sidebar.style.left === "-200px") {
-        sidebar.style.left = "0";
-        document.querySelector('.content').style.marginLeft = '220px'; /* Dostosuj margines, aby zawartość nie przesuwała się */
+    </li7>        
+</section>
+    <script>
+  function toggleSidebar() {
+  var sidebar = document.getElementById("sidebar");
+  if (sidebar.style.left === "-200px") {
+    sidebar.style.left = "0";
+    document.querySelector('.content').style.marginLeft = '220px';
+  } else {
+    sidebar.style.left = "-200px";
+    document.querySelector('.content').style.marginLeft = '20px';
+  }
+}
+
+function search() {
+  let input = document.getElementById('searchInput').value.toLowerCase();
+  let h3Tags = document.getElementsByTagName('h3');
+  let pTags = document.getElementsByTagName('p');
+
+  let h3Visible = false;  
+
+  for (let i = 0; i < h3Tags.length; i++) {
+    let h3Text = h3Tags[i].textContent.toLowerCase();
+    if (h3Text.includes(input)) {
+      h3Tags[i].style.display = "";  
+      h3Visible = true;  
+    } else {
+      h3Tags[i].style.display = "none";  
+    }
+  }
+
+  for (let i = 0; i < pTags.length; i++) {
+    let pText = pTags[i].textContent.toLowerCase();
+    let parentLi = pTags[i].closest('li, li2, li3, li4, li5, li6, li7'); 
+
+    if (parentLi) {
+      let h3InParent = parentLi.querySelector('h3'); 
+
+      if (h3InParent && h3InParent.style.display === "none") {
+        pTags[i].style.display = "none";  
       } else {
-        sidebar.style.left = "-200px";
-        document.querySelector('.content').style.marginLeft = '20px';
+        pTags[i].style.display = "";  
       }
     }
-  </script>
-</section>
+  }
+
+  // Ukryj rodzica <li> jeśli żaden z <h3> w nim nie jest widoczny
+  let listItems = document.querySelectorAll('li, li2, li3, li4, li5, li6, li7');
+  for (let i = 0; i < listItems.length; i++) {
+    let h3InList = listItems[i].querySelector('h3');
+    let pInList = listItems[i].querySelector('p');
+    
+    if (h3InList && h3InList.style.display === "none" && (!pInList || pInList.style.display === "none")) {
+      listItems[i].style.display = "none";  // Ukryj <li> jeśli wszystkie <h3> i <p> są ukryte
+    } else {
+      listItems[i].style.display = "";  // Pokaż <li>
+    }
+  }
+}
+
+</script>
 </body>
 </html>
