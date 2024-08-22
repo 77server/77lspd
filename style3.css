@@ -136,3 +136,22 @@ header h1 {
     border-radius: 10px; /* Zaokrągla rogi obrazka */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodaje cień pod obrazkiem */
 }
+/* Stylowanie dla przycisku */
+.styled-button {
+    background-color: red; /* Czerwone tło */
+    color: white; /* Biały tekst */
+    padding: 10px 20px; /* Mniejsze wcięcia po bokach, aby przycisk był chudszy */
+    border: none; /* Brak obramowania */
+    border-radius: 15px; /* Zaokrąglone rogi */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    font-size: 20px; /* Rozmiar tekstu, zmniejszony dla lepszego dopasowania */
+    display: block; /* Blokowe wyświetlanie */
+    margin: 0 auto; /* Wyśrodkowanie przycisku */
+    text-align: center; /* Wyśrodkowanie tekstu w przycisku */
+    width: fit-content; /* Automatyczna szerokość dostosowana do zawartości */
+    white-space: nowrap; /* Zapobiega łamaniu tekstu w przycisku */
+}
+
+.styled-button:hover {
+    background-color: darkred; /* Zmiana koloru tła po najechaniu */
+}

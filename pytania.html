@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Zgłoszeniowy</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .buttons {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="question-1" class="question">
+            <h1>Kilka pytań przed zgłoszeniem:</h1>
+            <p>1. Jesteś gotowa / gotowy?!</p>
+            <div class="buttons">
+                <button onclick="showQuestion(2)">Tak</button>
+                <button onclick="goHome()">Nie</button>
+            </div>
+        </div>
+        <div id="question-2" class="question" style="display: none;">
+            <h1>Kilka pytań przed zgłoszeniem:</h1>
+            <p>1. Podanie nie jest anonimowe!</p>
+            <div class="buttons">
+                <button onclick="showQuestion(3)">Dalej</button>
+            </div>
+        </div>
+        <div id="question-3" class="question" style="display: none;">
+            <h1>Pytanie Numer: 2</h1>
+            <p>2. Przygotowałeś Nagranie / dowód?</p>
+            <div class="buttons">
+                <button onclick="showQuestion(4)">Tak</button>
+                <button onclick="goHome()">Nie</button>
+            </div>
+        </div>
+        <div id="question-4" class="question" style="display: none;">
+             <h1>Pytanie Numer: 3</h1>
+            <p>Zgłoszenie trafi do IAD oraz HC LSPD<br> Czy na pewno chcesz zgłosić Funkcjonariusza?</p>
+            <div class="buttons">
+                <button onclick="redirect()">Tak</button>
+                <button onclick="goHome()">Nie</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showQuestion(questionNumber) {
+            document.querySelectorAll('.question').forEach((el) => {
+                el.style.display = 'none';
+            });
+            document.getElementById('question-' + questionNumber).style.display = 'block';
+        }
+
+        function goHome() {
+            window.location.href = 'glowna2.html'; // Link do strony głównej
+        }
+
+        function redirect() {
+            window.location.href = 'zgloszenie.html'; // Link do kolejnej strony
+        }
+    </script>
+</body>
+</html>
