@@ -377,3 +377,6 @@ footer {
     padding: 20px;
 }
 
+.more-description {
+    display: none;
+}
