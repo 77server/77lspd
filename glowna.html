@@ -14,7 +14,7 @@
         <img src="logo77.png" alt="Logo LSPD" class="left"> 
         <nav>
             <ul>
-                <li><a href="glowna.html">Strona główna</a></li>
+                <li><a href="test22.html">Strona główna</a></li>
                 <li><a href="#departments">Wydziały</a></li>
                 <li><a href="officers.html">Funkcjonariusze</a></li>
                 <li><a href="loading.html">Ogłoszenia</a></li>
@@ -63,29 +63,40 @@
     <!-- Sekcja Wydziały -->
     <section id="departments">
         <h2>Wydziały LSPD</h2>
-        <div class="department2">
+        <div class="department2" onclick="toggleDescription('desc1')">
             <h3>Oddział S.W.A.T. / S.E.R.T.</h3>
             <p>Specjalne jednostki taktyczne do zwalczania najgroźniejszych przestępców.</p>
+            <div id="desc1" class="more-description">
+            <p>SWAT oznacza zespół, bądź jednostką realizującą działania taktyczne przy wsparciu specjalistycznego sprzętu. W LS nie tylko stricte policyjnego, ale również znajdującego się na wyposażeniu armii, stąd też możemy zobaczyć specjalsów ze SWAT-u nie tylko w ciemnych (czarnych) mundurach taktycznych, ale też w barwach identyfikowanych z wojskiem, zielonym, szarym.</p>
         </div>
-        <div class="department">
+        </div>
+        <div class="department" onclick="toggleDescription('desc2')">
             <h3>Internal Affairs Division</h3>
             <p>Wydział wewnętrzny zajmujący się przede wszystkim nadzorowanie egzekwowania przez funkcjonariuszy procedur.</p>
+            <div id="desc2" class="more-description">
+            <p>Więcej informacji: Na ten moment brak...</p>
         </div>
-        <div class="department">
-            <h3>United States Marshall</h3>
-            <p>Marshall US jednostka odpowiedzialna za konwoje oraz obstawianie rozpraw sądowych.</p>
         </div>
-        <div class="department">
-            <h3>Marshall Agency</h3>
-            <p>Jednostka wspierająca Marshall US w konwojach i rozprawach bądź transportem ważnych osób. Dodatkowe zadania i główne tej jednostki polegają na namierzaniu i zatrzymywaniu ludzi bądź pojazdów które są poszukiwanie za przestępstwa.</p>
+        <div class="department3" onclick="toggleDescription('desc3')">
+             <h3>United States Marshall & Marshall Agency</h3>
+            <p>Marshall US jednostka odpowiedzialna za konwoje oraz obstawianie rozpraw sądowych bądź transportem ważnych osób. Dodatkowe zadania i główne tej jednostki polegają na namierzaniu i zatrzymywaniu ludzi bądź pojazdów które są poszukiwanie za przestępstwa.</p>
+            <div id="desc3" class="more-description">
+            <p>Więcej informacji: Na ten moment brak...</p>
         </div>
-        <div class="department4">
+        </div>
+        <div class="department4" onclick="toggleDescription('desc5')">
             <h3>Detective Task Unit</h3>
             <p>Wydział detektywistyczny, powołany głównie do działań undercover. Zajmują się oni zabezpieczaniem dowodów, współpracą z koronerem, prowadzeniem dochodzeń i śledztw.</p>
+            <div id="desc5" class="more-description">
+            <p>Więcej informacji: Na ten moment brak...</p>
         </div>
-        <div class="department5">
+        </div>
+        <div class="department5" onclick="toggleDescription('desc6')">
             <h3>Drug Observation Agency</h3>
             <p>Wydział narkotykowy, powołany głównie do działań zwalczających handel oraz wytwarzanie substacji psychoaktywnych.</p>
+            <div id="desc6" class="more-description">
+            <p>Więcej informacji: Na ten moment brak...</p>
+        </div>
         </div>
     </section>
 
@@ -132,6 +143,15 @@
                 form.style.display = 'none';
             }
         }
+        
+        function toggleDescription(id) {
+        var desc = document.getElementById(id);
+        if (desc.style.display === "none" || desc.style.display === "") {
+            desc.style.display = "block";
+        } else {
+            desc.style.display = "none";
+        }
+    }
     </script>
 </body>
 </html>
